@@ -46,7 +46,7 @@ export const Feed = ({pageNumber, articles}) => {
                         }
                     }}
                     className={pageNumber === 5 ? styles.disabled : styles.active}>
-                        Previous page
+                        Next page
                 </div>
             </div>
         </div>
