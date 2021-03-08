@@ -3,6 +3,8 @@
     height: 50px;
     display: flex;
     justify-content: center;
+    background-color:white;
+    z-index: 2;
 }
 
 .main div {

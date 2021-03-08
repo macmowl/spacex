@@ -8,8 +8,6 @@ export const Menu = () => {
         <div className={styles.main}>
             <div onClick={() => router.push('/')}>Home</div>
             <div onClick={() => router.push('/feed/1')}>Feeds</div>
-            <div onClick={() => router.push('/elon')}>Elon</div>
-            <div>Twitter</div>
         </div>
     )
 };
