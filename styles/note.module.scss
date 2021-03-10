@@ -1,0 +1,23 @@
+.card {
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+
+}
+
+.btnView {
+    background-color: #0370f3;
+    height: 30px;
+}
+
+.btnDanger {
+    background-color: white;
+    color: #333;
+    border: 1px solid #CCC;
+    height: 30px;
+}

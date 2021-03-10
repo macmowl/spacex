@@ -1,5 +1,5 @@
 module.exports = {
-    images: {
-      domains: ['localhost'],
-    },
-  }
+    env: {
+        URI: 'http://localhost:3000'
+    }
+}
