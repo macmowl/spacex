@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import fetch from 'isomorphic-unfetch';
 import { useRouter } from 'next/router';
 
 const EditNote = ({ note }) => {
@@ -28,7 +27,7 @@ const EditNote = ({ note }) => {
                 },
                 body: JSON.stringify(form)
             })
-            router.push("/notes")
+            router.push("/")
         } catch (error) {
             console.log(error);
         }

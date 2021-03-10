@@ -27,7 +27,7 @@ const NewNote = () => {
                 },
                 body: JSON.stringify(form)
             })
-            router.push("/notes")
+            router.push("/")
         } catch (error) {
             console.log(error);
         }

@@ -1,23 +1,16 @@
 import Link from 'next/link';
-import navStyles from '../styles/menu.module.scss';
 
 export const Menu = () => {
 
     return(
         <>
-            <nav className={navStyles.nav}>
+            <nav className="nav">
                 <ul>
                     <li>
-                        <Link href='/'>Home</Link>
+                        <Link href='/'>My notes</Link>
                     </li>
                     <li>
-                        <Link href='/feed/1'>Feeds</Link>
-                    </li>
-                    <li>
-                        <Link href='/notes'>My notes</Link>
-                    </li>
-                    <li>
-                        <Link href='/notes/new'>Add note</Link>
+                        <Link href='/new'>Add note</Link>
                     </li>
                 </ul>
             </nav>

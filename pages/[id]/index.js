@@ -9,7 +9,7 @@ const Note = ({ note }) => {
             const deleted = await fetch(`http://localhost:3000/api/notes/${noteId}`, {
                 method: "DELETE"
             });
-            router.push('/notes'); 
+            router.push('/'); 
         } catch (error) {
             console.log(error);
         }
@@ -19,7 +19,7 @@ const Note = ({ note }) => {
         <div className="container">
             <h1>{note.title}</h1>
             <p>{note.description}</p>
-            <button onClick={() => router.push('/notes')}>Back</button>
+            <button onClick={() => router.push('/')}>Back</button>
             <button className="btn--danger" onClick={handleDelete}>Delete</button>
         </div>
     )
