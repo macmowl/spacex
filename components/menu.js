@@ -7,10 +7,14 @@ export const Menu = () => {
             <nav className="nav">
                 <ul>
                     <li>
-                        <Link href='/'>My notes</Link>
+                        <Link href='/'>
+                            <a>My notes</a>
+                        </Link>
                     </li>
                     <li>
-                        <Link href='/new'>Add note</Link>
+                        <Link href='/new'>
+                            <a>Add note</a>
+                        </Link>
                     </li>
                 </ul>
             </nav>

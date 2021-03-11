@@ -8,7 +8,7 @@ export const Index = ({ notes }) => {
             <NextSeo 
                 title="SpaceX notes"
             />
-            <h2>My SpaceX notes</h2>
+            <h2>My notes</h2>
             <div>
                 {notes.map(note => (
                     <div key={note._id} className={noteStyles.card}>

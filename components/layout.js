@@ -1,18 +1,18 @@
 import styles from '../styles/layout.module.scss';
 import Menu from './menu';
-import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 
 const layout = ({ children }) => {
     return (
         <>
-            <NextSeo 
-                title="SpaceX News"
-                description="The best place to keep an eye to the sky"
-            />
+            <Head >
+                <title>SpaceX Notes</title>
+                <meta name="description" content="The best place to keep an eye to the sky" />
+                <meta name="keywords" content="notes, workflow" />
+            </Head>
             <Menu />
             <div className={styles.container}>
                 <div className={styles.main}>
-                    
                     {children}
                 </div>
             </div>

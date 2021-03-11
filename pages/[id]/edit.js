@@ -19,7 +19,7 @@ const EditNote = ({ note }) => {
 
     const updateNote = async () => {
         try {
-            const res = await fetch(`${process.env.URI}/api/notes/${note._id}`, {
+            const res = await fetch(`/api/notes/${note._id}`, {
                 method: 'PUT',
                 headers: {
                     "Accept": "application/json",
