@@ -62,7 +62,7 @@ const EditNote = ({ note }) => {
 }
 
 export const getServerSideProps = async ({query: {id}}) => {
-    const res = await fetch(`${process.env.URI}/api/notes/${id}`);
+    const res = await fetch(`https://spacexnews.vercel.app/api/notes/${id}`);
     const { data } = await res.json();
 
     return {
