@@ -33,7 +33,9 @@ export const Index = ({ notes }) => {
 }
 
 export const getServerSideProps = async () => {
-    const res = await fetch(`${process.env.URI}/api/notes`);
+    // const res = await fetch(`${process.env.URI}/api/notes`);
+    const res = await fetch(`https://spacexnews.vercel.app/api/notes`);
+
     const { data } = await res.json();
 
     return {
